@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 23868303300934196}
   - component: {fileID: 64894975738766156}
   m_Layer: 0
-  m_Name: SM_Veh_Plane_Stunt_01
+  m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

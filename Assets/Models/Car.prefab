@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 23889050435259212}
   - component: {fileID: 64091577265905638}
   m_Layer: 0
-  m_Name: SM_PolygonCity_Veh_Car_Small_01
+  m_Name: Car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
