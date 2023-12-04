@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlaneAnimator : MonoBehaviour
 {
+    public float speed = 1f;
     void Start()
     {
         Debug.Log("PlaneAnimator");
@@ -11,6 +12,7 @@ public class PlaneAnimator : MonoBehaviour
 
     void Update()
     {
-        
+        Debug.Log("PlaneAnimator Speed: " + speed);
+        transform.Rotate(0f, 0f, speed * Time.fixedDeltaTime, Space.Self);
     }
 }

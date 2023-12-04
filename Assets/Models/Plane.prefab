@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4849428758027974}
   - component: {fileID: 33351717590694486}
   - component: {fileID: 23787634765878644}
+  - component: {fileID: 1153109888138486141}
   m_Layer: 0
   m_Name: SM_Veh_Plane_Stunt_01_Prop
   m_TagString: Untagged
@@ -83,6 +84,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1153109888138486141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016477963433856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a42f3d84a44e47f5b898781360f25b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 150
 --- !u!1 &1078352730118072
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,7 +358,6 @@ GameObject:
   - component: {fileID: 33696426054016862}
   - component: {fileID: 23868303300934196}
   - component: {fileID: 64894975738766156}
-  - component: {fileID: 2638683453709320049}
   - component: {fileID: -1769619935111739223}
   m_Layer: 0
   m_Name: Plane
@@ -452,18 +465,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 89cfb46882e163d428cb9f3d79ae2393, type: 3}
---- !u!114 &2638683453709320049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1300689381462198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a42f3d84a44e47f5b898781360f25b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-1769619935111739223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -476,6 +477,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ee67eb4225a8466f8bcfc56a722c336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0.01
+  rotationSpeed: 0.1
 --- !u!1 &1305793217231656
 GameObject:
   m_ObjectHideFlags: 0
