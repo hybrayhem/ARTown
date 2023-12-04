@@ -153,6 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e378504fa485446e7b42b6550406a1d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectToPlace: {fileID: 1300689381462198, guid: 15c60003ceb41452c88d135d51908da0,
+    type: 3}
   placementIndicator: {fileID: 1546107126}
 --- !u!4 &26307512
 Transform:
@@ -886,8 +888,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.1
-  far clip plane: 20
+  near clip plane: 8
+  far clip plane: 1600
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -1182,7 +1184,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 80, y: 80, z: 80}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1354141930}
@@ -1230,7 +1232,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 8, y: 8, z: 8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1546107127}
