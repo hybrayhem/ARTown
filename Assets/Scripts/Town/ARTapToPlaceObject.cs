@@ -6,6 +6,7 @@ using UnityEngine.XR.ARSubsystems; // using UnityEngine.Experimental.XR;
 
 public class ARTapToPlaceObject : MonoBehaviour
 {
+    public GameObject objectToPlace;
     public GameObject placementIndicator;
 
     // private ARSessionOrigin arOrigin;
@@ -25,6 +26,18 @@ public class ARTapToPlaceObject : MonoBehaviour
     {
         UpdatePlacementPose();
         UpdatePlacementIndicator();
+
+        if(placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) {
+            PlaceObject();
+        }
+    }
+
+    private void PlaceObject() {
+        Instantiate(objectToPlace, placementPose.position, placementPose.rotation);
+        
+        // Exit script
+        placementIndicator.SetActive(false);
+        this.enabled = false;
     }
 
     private void UpdatePlacementIndicator() {
@@ -54,6 +67,11 @@ public class ARTapToPlaceObject : MonoBehaviour
         placementPoseIsValid = hits.Count > 0; 
         if(placementPoseIsValid) {  
             placementPose = hits[0].pose;
+
+            // Note: This part is not needed with the new ARRaycastManager
+            // var cameraForward = Camera.current.transform.forward;
+            // var cameraBearing = new Vector3(cameraForward.x, 0, cameraForward.z).normalized;
+            // placementPose.rotation = Quaternion.LookRotation(cameraBearing);
         }
     }
 }
